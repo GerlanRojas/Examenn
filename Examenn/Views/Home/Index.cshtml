@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-4">
+    <h2>Root Main Page - Welcome @ViewBag.User.Name</h2>
+    <hr />
+
+    <!-- Botón para realizar una transferencia -->
+    <div class="mb-3">
+        <a href="@Url.Action("RealizarTransferencia", "Transaccion")" class="btn btn-primary">Realizar Transferencia</a>
+    </div>
+
+    <!-- Botón para ver el registro de transferencias -->
+    <div class="mb-3">
+        <a href="@Url.Action("VerRegistro", "Registro")" class="btn btn-secondary">Ver Registro de Transferencias</a>
+    </div>
+</div>
